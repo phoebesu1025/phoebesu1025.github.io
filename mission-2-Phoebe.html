@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="mission-2-Phoebe.css">
     <link rel="stylesheet" type="text/css"
         href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googlefonts.cn/css?family=Amatic+SC:400,700|Cookie|Kalam|Merienda" rel="stylesheet">
+    <script src="mission-2-Phoebe.js" defer></script>
 </head>
 
 <body>
@@ -19,8 +21,8 @@
                     <i class="fa fa-bars fa-2x" id="icon"></i>
                 </button>
                 <div class="dropdown-content">
-                    <div id="home-sidebar"></div>
-                    <div id="about-sidebar">About</div>
+                    <a href="#home-container"><div id="home-sidebar">Home</div></a>
+                    <a href="#about-container"><div id="about-sidebar">About</div></a>
                     <div id="collection-sidebar">Collection</div>
                     <div class="location-sidebar">
                         <p>Auckland</p>
@@ -32,22 +34,26 @@
             </div>
         </div>
     </header>
-    <!-------------------------------above is done--!-->
+    <!-------------------------------need to add id link--!-->
 
-    <section class="home-container">
+    <section id="home-container">
         <div class="introduction">
                 <h1>Hello! Welcome to my page.</h1>
                 <p>Hi, this is Phoebe!<br> I would like to share my photo collection here. :)</p>
-                <p>I would upload more photo in the future!</p>
         </div>
     </section>
 
+    <!-----introduce my background--------------->
     <section id="about-container">
         <div class="myPhoto">
             <img class="me" src="image/me.png">
         </div>
         <div class="aboutMe">
-            asdfasdf
+            <h2>About the author</h2>
+            <p>Hello guys! I am Phoebe.</p>
+            <p>This website is kind of a personal photo collection site.These photos are quite random from everywhere, but some of them are breathtaken shot.</p> 
+            <p>And it's all about the good memory moment. :D</p>
+            <p>Hope you guys enjoy them! ;)</p>
         </div>
 
 
