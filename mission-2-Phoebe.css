@@ -214,23 +214,17 @@ a:active { text-decoration: none; }
     flex-basis: 33%;
 }
 
-#auckland,
-#wellington,
-#othersinNz {
+#newZealand,
+#outsideNewZealand,
+#protrait {
     cursor: pointer;
     padding-bottom: 6px;
     opacity: 0.5
 }
 
-#auckland:hover,
-#wellington:hover,
-#othersinNz:hover {
-    opacity: 1;
-}
-
-.auckland:hover,
-.wellington:hover,
-.othersinNz:hover {
+#newZealand:hover,
+#outsideNewZealand:hover,
+#protrait:hover {
     opacity: 1;
 }
 
