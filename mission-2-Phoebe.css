@@ -7,7 +7,7 @@ body {
     font-family: Merienda, cursive;
     margin: 0;
     background-color: rgb(28, 40, 56);
-    height: 3000px;
+    height: 2400px;
     display: flex;
     flex-direction: column;
 }
@@ -74,7 +74,14 @@ body {
     border-style: solid;
     border-width: 1px;
     border-color: rgba(100, 110, 116, 0.766);
+    color:white;
 }
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:active { text-decoration: none; }
+
+
 
 .location-sidebar {
     text-decoration: underline;
@@ -94,7 +101,6 @@ body {
     background-color: rgba(122, 139, 162, 0.789);
     cursor: pointer;
 }
-
 /*-------------------------------------------------*/
 #home-container {
     z-index: 1000;
@@ -137,12 +143,7 @@ body {
     }
 }
 
-/*---need to add some animation--*/
-
-
-
-
-/*------------------------------------------------------------------------*/
+/*--------------------------------*/
 
 #about-container {
     z-index: 1000;
@@ -168,7 +169,6 @@ body {
     width: 600px;
     margin: 40px 20px;
     font-size: 20px;
-
 }
 
 @media screen and (max-width: 900px) {
@@ -196,43 +196,224 @@ body {
 
 #collection-container {
     display: flex;
-    z-index: 1000; 
-    width:100%;
-    margin-top:90px;
-    padding:12px 10px;
-    padding-bottom:2px;
+    z-index: 1000;
+    width: 100%;
+    margin-top: 90px;
+    padding: 12px 10px;
+    padding-bottom: 2px;
     justify-items: center;
     background-color: rgba(52, 62, 73, 0.729);
-    color:white;
+    color: white;
     text-align: center;
-    font-size:14px;
+    font-size: 14px;
 
 }
 
 #collection-container>div {
-    margin:4px 4px;
-    flex-basis:33%;
+    margin: 4px 4px;
+    flex-basis: 33%;
 }
 
 #auckland,
 #wellington,
 #othersinNz {
     cursor: pointer;
-    padding-bottom:6px;
-    opacity:0.5
+    padding-bottom: 6px;
+    opacity: 0.5
 }
 
-#auckland:hover, #wellington:hover, #othersinNz:hover {
-opacity:1;
+#auckland:hover,
+#wellington:hover,
+#othersinNz:hover {
+    opacity: 1;
 }
 
-.auckland:hover, .wellington:hover, .othersinNz:hover {
-opacity:1;
+.auckland:hover,
+.wellington:hover,
+.othersinNz:hover {
+    opacity: 1;
 }
 
-@media  screen and (max-width: 1000px){
-#collection-container {
+@media screen and (max-width: 1000px) {
+    #collection-container {
+        flex-direction: column;
+    }
+}
+
+/*-----------------Contact--------------------*/
+#contact-container {
+    z-index: 1000;
+    display: flex;
+    width: 100%;
+    margin-top: 60px;
+    justify-items: space-around;
+}
+
+.otherlink-container {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    width: 100%;
+    margin-top: 5px;
+    margin-left:20px;
 }
+
+#moreAboutMe {
+    text-align: center;
+    margin-top:2px;
+    font-size:30px;
 }
-    
+
+.otherlink-icons{
+    display:flex;
+    width:200px;
+    padding:2px 2px;
+}
+
+.otherlink-icons i {
+    color:white;
+}
+
+.subscribe {
+    text-align: center;
+}
+
+.subscribe>p {
+    color: rgb(196, 192, 192);
+    font-size: 18px;;
+}
+
+#subscribe-email {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 4px;
+}
+
+#subscribe-email::placeholder {
+    font-size: 14px;
+}
+
+.signup-button {
+    background-color: rgba(87, 107, 119, 0.621);
+    border: none;
+    color: white;
+    box-shadow: 1px 1px 3px grey;
+    width:100px;
+    padding: 10px 4px;
+    margin-bottom: 4px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-button:hover {
+    background-color: rgba(122, 139, 162, 0.789);
+}
+
+/*-----------------------*/
+
+
+
+fieldset {
+    color: white;
+    width: 50%;
+    margin-left: 100px;
+    padding-bottom: 8px;
+}
+
+fieldset>p {
+    color: rgb(196, 192, 192);
+}
+
+legend {
+    font-size: 30px;
+}
+
+form {
+    width: 470px;
+    background-color: rgb(28, 40, 56);
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+label {
+    color: white;
+    margin: 4px;
+    display: block;
+}
+
+input {
+    margin: 4px;
+    color: black;
+    width: 300px;
+}
+
+textarea {
+    height: 100px;
+    width: 100%;
+}
+
+#submit-button {
+    background-color: rgba(87, 107, 119, 0.621);
+    border: none;
+    color: white;
+    box-shadow: 1px 1px 3px grey;
+    padding: 10px 10px;
+    margin-top: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    background-color: rgba(122, 139, 162, 0.789);
+}
+
+@media screen and (max-width:1000px) {
+
+    #contact-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+
+    fieldset {
+        width:100vw;
+        margin:30px 0;   
+    }
+
+    form{
+        margin:auto;
+        text-align: center;
+    }
+
+
+}
+
+
+
+/*-----------footer----------------------*/
+footer {
+    position: fixed;
+    z-index: 1005;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(51, 57, 66);
+    color: rgba(196, 192, 192, 0.84);
+    padding-right: 30px;
+
+}
+
+.footerBar {
+    margin: 12px 20px;
+    font-size: 8px;
+    text-align: end;
+}

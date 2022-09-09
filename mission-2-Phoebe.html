@@ -29,7 +29,7 @@
                         <p>Wellington</p>
                         <p>Somewhere in NZ</p>
                     </div>
-                    <div id="contact-sidebar">Contact Me</div>
+                    <a href="#contact-container"><div id="contact-sidebar">Contact Me</div></a>
                 </div>
             </div>
         </div>
@@ -65,13 +65,65 @@
         <div><img id="othersinNz" src="image/Tongariro.JPG" height="350px" width="500px">SomewhereNZ</div>
       </div>
     </section>
+<!---------------------------form---left--------------->
+<section id = "contact-container">
+
+<div class="otherlink-container">
+    <div id="moreAboutMe">More about Me</div>
+    <div class="otherlink-icons">
+      <a href="https://www.facebook.com/profile.php?id=100005733000599"><i class="fa fa-facebook-square"
+          aria-hidden="true"></i></a>
+      <a href="https://www.youtube.com/channel/UCfZf-tGuPXyd8iW2KtX6lKg"><i class="fa fa-youtube-play"
+          aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/phoebesu1025/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/phoebe-su-4a618813a/"><i class="fa fa-linkedin-square"
+          aria-hidden="true"></i></a>
+    </div>
+    <br>
+
+    <div class="subscribe">subscribe
+      <p>Sign up with your email address to receive news and updates!
+      </p>
+      <input id="subscribe-email" type="text" placeholder="email@gmail.com" action="mailto:phoebesu85@yahoo.com.tw"
+        method="post">
+      <button class="signup-button">Sign up</button>
+    </div>
+  </div>
+
+  <!---form-right----------------------->
+  <div class="contact-me">
+    <fieldset>
+      <legend>Contact me</legend>
+      <p>Got an enquiry, suggestion or feedback? Please use this online form to get in touch with us. Thank you!
+      </p>
+
+      <form action="mailto:phoebesu85@yahoo.com.tw" method="post">
+        <label>Name*</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label>Email*</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label>Phone Number</label>
+        <input type="text" id="phone" name="phone">
+        <br>
+        <br>
+        <hr>
+        <textarea placeholder="Type Message here...."></textarea>
+        <button id="submit-button">Submit</button>
+      </form>
+    </fieldset>
+  </div>
 
 
+</section>
 
 
-
-
-
+<!----------------------footer----------------------------------->
+    <footer>
+        <div class="footerBar"> 
+            Copyright 2022 by Phoebe Su. All Rights Reserved.</div>     
+    </footer>
 </body>
 
 </html>
