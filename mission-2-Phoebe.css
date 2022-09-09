@@ -4,10 +4,10 @@
 }
 
 body {
-    font-family:Merienda,cursive;
-        margin: 0;
+    font-family: Merienda, cursive;
+    margin: 0;
     background-color: rgb(28, 40, 56);
-    height: 2000px;
+    height: 3000px;
     display: flex;
     flex-direction: column;
 }
@@ -85,6 +85,7 @@ body {
     margin: 0;
     font-size: 20px;
 }
+
 #home-sidebar:hover,
 #collection-sidebar:hover,
 #about-sidebar:hover,
@@ -105,21 +106,26 @@ body {
 .introduction {
     color: rgba(255, 255, 255, 0.642);
     font-size: 30px;
-    animation-name:homepage;
-    animation-duration:6s;
+    animation-name: homepage;
+    animation-duration: 6s;
 }
 
 @keyframes homepage {
-    from {opacity: 0;}
-    to {opacity: 1;}
-    
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
 }
 
 @media screen and (max-width: 900px) {
     .introduction {
         font-size: 18px;
-        color:white;
-        transition:1s;
+        color: white;
+        transition: 1s;
     }
 
     #home-container {
@@ -127,7 +133,7 @@ body {
         padding-left: 30px;
         padding-right: 30px;
         height: 370px;
-        transition:1s;
+        transition: 1s;
     }
 }
 
@@ -143,45 +149,90 @@ body {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    height:450px;
+    height: 450px;
     color: white;
-    background-color:rgba(60, 70, 82, 0.729); 
+    background-color: rgba(60, 70, 82, 0.729);
 }
 
 .myPhoto {
-   width:400px;
+    width: 400px;
 }
 
 .me {
     width: 400px;
     border-radius: 10px;
-    margin-top:25px;
+    margin-top: 25px;
 }
 
 .aboutMe {
-    width:600px;
-    margin:40px 20px;
-    font-size:20px;
-    
+    width: 600px;
+    margin: 40px 20px;
+    font-size: 20px;
+
 }
 
 @media screen and (max-width: 900px) {
     #about-container {
         flex-direction: column;
-        height:700px;
+        height: 700px;
         align-items: center;
-        transition:1s }
+        transition: 1s
+    }
 
     .myPhoto>.me {
-        width:300px;
-        margin-left:auto;
-        margin-right:auto;
-        display:block;}
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
 
     .aboutMe {
         text-align: center;
-        font-size:16px;
+        font-size: 16px;
     }
 }
 
-/*---------------------------------------------------------*/
+/*----------------------------------------------*/
+
+#collection-container {
+    display: flex;
+    z-index: 1000; 
+    width:100%;
+    margin-top:90px;
+    padding:12px 10px;
+    padding-bottom:2px;
+    justify-items: center;
+    background-color: rgba(52, 62, 73, 0.729);
+    color:white;
+    text-align: center;
+    font-size:14px;
+
+}
+
+#collection-container>div {
+    margin:4px 4px;
+    flex-basis:33%;
+}
+
+#auckland,
+#wellington,
+#othersinNz {
+    cursor: pointer;
+    padding-bottom:6px;
+    opacity:0.5
+}
+
+#auckland:hover, #wellington:hover, #othersinNz:hover {
+opacity:1;
+}
+
+.auckland:hover, .wellington:hover, .othersinNz:hover {
+opacity:1;
+}
+
+@media  screen and (max-width: 1000px){
+#collection-container {
+    flex-direction: column;
+}
+}
+    
