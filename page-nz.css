@@ -11,14 +11,14 @@ body {
 
 .backgroundphoto {
     position: absolute;
-    z-index: 0;
-    opacity: 0.7;
+    z-index: 1;
+    opacity: 0.5;
     object-fit: contain;
 }
 
 .headbar {
     position: fixed;
-    z-index: 1001;
+    z-index: 100;
     width: 100vw;
     height: 40px;
     background-color: rgb(51, 57, 66);
@@ -71,14 +71,20 @@ body {
     border-style: solid;
     border-width: 1px;
     border-color: rgba(100, 110, 116, 0.766);
-    color:white;
+    color: white;
 }
 
-a:link { text-decoration: none; }
-a:visited { text-decoration: none; }
-a:active { text-decoration: none; }
+a:link {
+    text-decoration: none;
+}
 
+a:visited {
+    text-decoration: none;
+}
 
+a:active {
+    text-decoration: none;
+}
 
 .location-sidebar {
     text-decoration: underline;
@@ -98,6 +104,71 @@ a:active { text-decoration: none; }
     background-color: rgba(122, 139, 162, 0.789);
     cursor: pointer;
 }
+
+/*------------------------------*/
+.main-container {
+    display:flex;
+    flex-direction: column;
+}
+
+#photoDisplay {
+    display: flex;
+    width:100%;
+    justify-content: center;
+    padding-top:50px;
+}
+
+#photoDisplay div {
+    width:70vw;
+    margin-top: auto;
+    margin-bottom:auto;
+}
+
+#photoNz {
+    position: relative;
+    z-index: 10;
+    
+}
+
+#photoDisplay button {
+    width:35px;
+    height:190px;
+    border-radius: 6px;
+    border:none;
+    background-color: rgba(128, 128, 128, 0.529);
+    margin-top: auto;
+    margin-bottom:auto;
+    display:inline-block;
+}
+
+
+#photoName {
+    position:relative;
+    color:rgba(255, 255, 255, 0.371);
+    font-size: 20px;
+    text-align: center;
+    z-index: 100;
+    background-color: rgba(128, 128, 128, 0.586);
+    margin-top:-34px;
+}
+
+
+@media  screen and (max-width: 900px) {
+    #photoDisplay {
+        padding-top:200px;
+    }
+    #photoName {
+        font-size:12px;
+        margin-top:-22px;
+    }
+}
+
+
+
+
+
+
+
 
 
 
