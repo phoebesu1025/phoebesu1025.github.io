@@ -289,7 +289,7 @@ a:active { text-decoration: none; }
     font-size: 14px;
 }
 
-.signup-button {
+.signUpBtn {
     background-color: rgba(87, 107, 119, 0.621);
     border: none;
     color: white;
@@ -302,7 +302,7 @@ a:active { text-decoration: none; }
     cursor: pointer;
 }
 
-.signup-button:hover {
+.signUpBtn:hover {
     background-color: rgba(122, 139, 162, 0.789);
 }
 
@@ -352,7 +352,7 @@ textarea {
     width: 100%;
 }
 
-#submit-button {
+#submitbtn {
     background-color: rgba(87, 107, 119, 0.621);
     border: none;
     color: white;
@@ -364,7 +364,7 @@ textarea {
     cursor: pointer;
 }
 
-#submit-button:hover {
+#submitbtn:hover {
     background-color: rgba(122, 139, 162, 0.789);
 }
 
