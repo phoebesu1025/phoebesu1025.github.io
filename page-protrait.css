@@ -7,21 +7,18 @@ body {
     font-family: Merienda, cursive;
     margin: 0;
     background-color: rgb(28, 40, 56);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
 .backgroundphoto {
     position: absolute;
     z-index: 0;
-    opacity: 0.7;
-    object-fit: fill;
+    opacity: 0.5;
+    object-fit: contain;
 }
 
 .headbar {
     position: fixed;
-    z-index: 1001;
+    z-index: 100;
     width: 100vw;
     height: 40px;
     background-color: rgb(51, 57, 66);
@@ -74,14 +71,20 @@ body {
     border-style: solid;
     border-width: 1px;
     border-color: rgba(100, 110, 116, 0.766);
-    color:white;
+    color: white;
 }
 
-a:link { text-decoration: none; }
-a:visited { text-decoration: none; }
-a:active { text-decoration: none; }
+a:link {
+    text-decoration: none;
+}
 
+a:visited {
+    text-decoration: none;
+}
 
+a:active {
+    text-decoration: none;
+}
 
 .location-sidebar {
     text-decoration: underline;
@@ -102,52 +105,86 @@ a:active { text-decoration: none; }
     cursor: pointer;
 }
 
+/*------------------------------*/
+.main-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.photoDisplay {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+#photoDisplay div {
+    width: 70vw;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
 
+#photoNz {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    z-index: 10;
+    width: 70vw;
+    
+}
+
+.photoDisplay button {
+    position: relative;
+    width: 35px;
+    height: 300px;
+    border-radius: 6px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.529);
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.photoDisplay button:hover {
+    background-color: rgba(128, 128, 128, 0.732);
+}
+
+.photoDisplay button:active {
+    background-color: rgb(104, 104, 104);
+    box-shadow: 1px 1px 10px grey;
+}
+
+#photoName {
+    position: relative;
+    margin-right:auto;
+    margin-left:auto;
+    display: block;
+    width:70vw;
+    color: rgba(2, 2, 2, 0.733);
+    font-size: 20px;
+    text-align: center;
+    z-index: 12;
+    background-color: rgba(128, 128, 128, 0.586);
+    margin-top: -30px;
+}
 
 
+@media screen and (max-width: 900px) {
+    #photoDisplay {
+        padding-top: 200px;
+    }
 
+    #photoDisplay button {
+        margin-top: 4px;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    #photoName {
+        font-size: 12px;
+        margin-top: -22px;
+    }
+}
 
 
 
