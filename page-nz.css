@@ -125,6 +125,7 @@ a:active {
     margin-bottom: auto;
 }
 
+
 #photoNz {
     position: relative;
     margin-left: auto;
@@ -132,13 +133,13 @@ a:active {
     display: block;
     z-index: 10;
     width: 70vw;
-
+    
 }
 
 .photoDisplay button {
     position: relative;
     width: 35px;
-    height: 190px;
+    height: 300px;
     border-radius: 6px;
     border: none;
     background-color: rgba(128, 128, 128, 0.529);
