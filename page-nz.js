@@ -7,7 +7,7 @@ const nextPhoto = document.getElementById('nextPhotoBtn');
 const lastPhoto = document.getElementById('lastPhotoBtn');
 
 
-const photoArray = ["image/Wellington/welly1.jpg","image/Wellington/welly2.jpg","image/Wellington/welly3.jpg","image/Wellington/welly4.jpg","image/Wellington/welly5.jpg","image/Wellington/welly6.jpg","image/Wellington/welly7.jpg","image/Wellington/welly8.jpg","image/Wellington/welly9.jpg","image/Wellington/welly10.jpg","image/Wellington/welly11.jpg","image/Wellington/welly12.jpg","image/Wellington/welly13.jpg","image/Wellington/welly17.jpg","image/Wellington/welly18.jpg","image/Wellington/welly20.jpg"]
+const photoArray = ["image/Wellington/welly1.jpg","image/Wellington/welly2.jpg/","image/Wellington/welly3.jpg","image/Wellington/welly4.jpg","image/Wellington/welly5.jpg","image/Wellington/welly6.jpg","image/Wellington/welly7.jpg","image/Wellington/welly8.jpg","image/Wellington/welly9.jpg","image/Wellington/welly10.jpg","image/Wellington/welly11.jpg","image/Wellington/welly12.jpg","image/Wellington/welly13.jpg","image/Wellington/welly17.jpg","image/Wellington/welly18.jpg","image/Wellington/welly20.jpg"]
 const img = document.getElementById('photoNz')[0];
 
 
