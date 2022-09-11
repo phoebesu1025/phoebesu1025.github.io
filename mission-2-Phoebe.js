@@ -14,3 +14,4 @@ const signUpBtn = document.querySelector(".signUpBtn");
 signUpBtn.addEventListener('click', function () {
     return alert("Thank you for Signing up, I'll update more photos!")
 });
+

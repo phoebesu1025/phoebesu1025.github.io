@@ -11,7 +11,7 @@ body {
 
 .backgroundphoto {
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     opacity: 0.5;
     object-fit: contain;
 }
@@ -109,9 +109,10 @@ a:active {
 .main-container {
     display:flex;
     flex-direction: column;
+    padding-top:100px;
 }
 
-#photoDisplay {
+.photoDisplay {
     display: flex;
     width:100%;
     justify-content: center;
@@ -126,11 +127,16 @@ a:active {
 
 #photoNz {
     position: relative;
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
     z-index: 10;
+    width:70vw;
     
 }
 
-#photoDisplay button {
+.photoDisplay button {
+    position: relative;
     width:35px;
     height:190px;
     border-radius: 6px;
@@ -138,16 +144,22 @@ a:active {
     background-color: rgba(128, 128, 128, 0.529);
     margin-top: auto;
     margin-bottom:auto;
-    display:inline-block;
 }
 
+.photoDisplay button:hover{
+    background-color: rgba(128, 128, 128, 0.732);
+}
+.photoDisplay button:active{
+    background-color: rgb(104, 104, 104);
+    box-shadow: 1px 1px 10px grey;
+}
 
 #photoName {
     position:relative;
-    color:rgba(255, 255, 255, 0.371);
+    color:rgba(2, 2, 2, 0.371);
     font-size: 20px;
     text-align: center;
-    z-index: 100;
+    z-index: 12;
     background-color: rgba(128, 128, 128, 0.586);
     margin-top:-34px;
 }
@@ -156,6 +168,9 @@ a:active {
 @media  screen and (max-width: 900px) {
     #photoDisplay {
         padding-top:200px;
+    }
+    #photoDisplay button {
+        margin-top:4px;
     }
     #photoName {
         font-size:12px;
@@ -166,7 +181,9 @@ a:active {
 
 
 
-
+button{
+    z-index: 1002;
+}
 
 
 
