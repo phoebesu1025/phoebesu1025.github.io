@@ -7,11 +7,11 @@ const nextPhoto = document.getElementById('nextPhotoBtn');
 const lastPhoto = document.getElementById('lastPhotoBtn');
 
 
-const photoArray = ["image/Wellington/welly1.jpg","image/Wellington/welly2.jpg/","image/Wellington/welly3.jpg","image/Wellington/welly4.jpg","image/Wellington/welly5.jpg","image/Wellington/welly6.jpg","image/Wellington/welly7.jpg","image/Wellington/welly8.jpg","image/Wellington/welly9.jpg","image/Wellington/welly10.jpg","image/Wellington/welly11.jpg","image/Wellington/welly12.jpg","image/Wellington/welly13.jpg","image/Wellington/welly17.jpg","image/Wellington/welly18.jpg","image/Wellington/welly20.jpg"]
+const photoArray = ["image/Wellington/welly1.jpg","image/Wellington/welly3.jpg","image/Wellington/welly4.jpg","image/Wellington/welly5.jpg","image/Wellington/welly6.jpg","image/Wellington/welly7.jpg","image/Wellington/welly8.jpg","image/Wellington/welly9.jpg","image/Wellington/welly10.jpg","image/Wellington/welly11.jpg","image/Wellington/welly12.jpg","image/Wellington/welly13.jpg","image/Wellington/welly17.jpg","image/Wellington/welly18.jpg","image/Wellington/welly20.jpg"]
 const img = document.getElementById('photoNz')[0];
 
 
-const photoNameArray = ["WaterFront 1","WaterFront 2","WaterFront 3","WaterFront 4","WaterFront 5", "Mt Victoria 1","Mt Victoria 2", "Mt Victoria 3", "Mt Victoria 4","Mt Victoria 5", "WaterFront Sculture 1", "WaterFront Sculpture 2", "Mt Victoria sculpture","AirNZ","WaterFront Sunset","Red Rocks"]
+const photoNameArray = ["WaterFront 1","WaterFront 2","WaterFront 3","WaterFront 4", "Mt Victoria 1","Mt Victoria 2", "Mt Victoria 3", "Mt Victoria 4","Mt Victoria 5", "WaterFront Sculture 1", "WaterFront Sculpture 2", "Mt Victoria sculpture","AirNZ","WaterFront Sunset","Red Rocks"]
 const photoName = document.getElementById("photoName");
 
 let indexPhotoArray=0;
