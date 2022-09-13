@@ -7,6 +7,7 @@ body {
     font-family: Merienda, cursive;
     margin: 0;
     background-color: rgb(28, 40, 56);
+    
 }
 
 .backgroundphoto {
@@ -109,7 +110,7 @@ a:active {
 .main-container {
     display: flex;
     flex-direction: column;
-    padding-top: 100px;
+    height: 20vh;
 }
 
 .photoDisplay {
@@ -119,10 +120,8 @@ a:active {
     padding-top: 50px;
 }
 
-#photoDisplay div {
+.photoDisplay div {
     width: 70vw;
-    margin-top: auto;
-    margin-bottom: auto;
 }
 
 
@@ -145,6 +144,8 @@ a:active {
     background-color: rgba(128, 128, 128, 0.529);
     margin-top: auto;
     margin-bottom: auto;
+    margin-left:20px;
+    margin-right:20px;
 }
 
 .photoDisplay button:hover {
@@ -167,22 +168,22 @@ a:active {
     text-align: center;
     z-index: 12;
     background-color: rgba(128, 128, 128, 0.586);
-    margin-top: -30px;
+    margin-top: -29px;
 }
 
 
 @media screen and (max-width: 900px) {
-    #photoDisplay {
-        padding-top: 200px;
+    .main-container {
+        padding-top:50px;
     }
-
-    #photoDisplay button {
-        margin-top: 4px;
+    .photoDisplay button {
+        margin-top: 40px;
+        height:100px;
     }
 
     #photoName {
         font-size: 12px;
-        margin-top: -22px;
+        margin-top: -18px;
     }
 }
 
