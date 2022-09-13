@@ -7,11 +7,11 @@ const nextPhoto = document.getElementById('nextPhotoBtn');
 const lastPhoto = document.getElementById('lastPhotoBtn');
 
 
-const photoArray = ["image/Singapore/singapore1.jpg","image/Singapore/singapore2.jpg","image/Singapore/singapore3.jpg","image/Singapore/singapore4.jpg","image/Singapore/singapore5.jpg","image/Singapore/singapore6.jpg","image/Singapore/singapore7.jpg","image/hawaii/diamondhead-Hawaii.jpg","image/hawaii/Kualoa-ranch2.jpg","image/hawaii/Kualoa-ranch3.jpg"]
+const photoArray = ["image/Singapore/singapore6.jpg","image/Singapore/singapore2.jpg","image/Singapore/singapore3.jpg","image/Singapore/singapore4.jpg","image/Singapore/singapore5.jpg","image/Singapore/singapore7.jpg","image/Singapore/singapore1.jpg","image/hawaii/diamondhead-Hawaii.jpg","image/hawaii/Kualoa-ranch2.jpg","image/hawaii/Kualoa-ranch3.jpg"]
 const img = document.getElementById('photoNz')[0];
 
 
-const photoNameArray = ["Singapore 1","Singapore 2","Singapore 3","Singapore 4","Singapore 5", "Singapore 6","Singapore 7", "Hawaii 1", "Hawaii 2","Hawaii 3"]
+const photoNameArray = ["Chang-i Airport, Singapore","Chang-i Airport,Singapore","Chang-i Airport, Singapore","Skyline View, Singapore","Marina Bay Sands Hotel, Singapore", "Marina Bay Sands Hotel, Singapore","SkyPark Observation Deck, Singapore", "Diamond Head, Honolulu", "Kualoa-ranch, Honolulu","Kualoa-ranch, Honolulu"]
 const photoName = document.getElementById("photoName");
 
 /*define the index from photoArray*/
