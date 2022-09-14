@@ -72,29 +72,24 @@ body {
     border-style: solid;
     border-width: 1px;
     border-color: rgba(100, 110, 116, 0.766);
-    color: white;
+    color:white;
 }
 
-a:link {
-    text-decoration: none;
-}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:active { text-decoration: none; }
+a {color:white;}
 
-a:visited {
-    text-decoration: none;
-}
-
-a:active {
-    text-decoration: none;
-}
 
 .location-sidebar {
     text-decoration: underline;
 }
 
-.location-sidebar>p {
+.location-sidebar p {
     padding-left: 50px;
     margin: 0;
     font-size: 20px;
+    color:white;
 }
 
 #home-sidebar:hover,
@@ -105,7 +100,6 @@ a:active {
     background-color: rgba(122, 139, 162, 0.789);
     cursor: pointer;
 }
-
 /*------------------------------*/
 .main-container {
     display: flex;
